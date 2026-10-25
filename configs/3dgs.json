@@ -1,0 +1,72 @@
+{
+  "resource_limits": {
+    "cpu_max_percent": 45,
+    "memory_max_percent": 45,
+    "memory_mode": "guard"
+  },
+  "data_root": "../data",
+  "repeat": 3,
+  "gpu_auto_select": true,
+  "gpu_id": null,
+  "stop_on_error": true,
+  "run_postprocess": true,
+  "postprocess_args": {
+    "include_train": true,
+    "skip_test": false,
+    "no_save_test_images": false,
+    "no_save_train_images": true,
+    "fps_warmup_rounds": 10,
+    "fps_measure_rounds": 10
+  },
+  "train_args": {
+    "progress_bar_width": 100,
+    "report_lpips_test": true,
+    "report_lpips_train": false,
+    "training_method": "3dgs",
+    "position_lr_init": 0.00016,
+    "densify_grad_threshold": 0.0002
+  },
+  "output_root": "output/3dgs",
+  "output_suffix": "",
+  "scenes": [
+    {
+      "name": "bicycle"
+    },
+    {
+      "name": "flowers"
+    },
+    {
+      "name": "garden"
+    },
+    {
+      "name": "stump"
+    },
+    {
+      "name": "treehill"
+    },
+    {
+      "name": "bonsai"
+    },
+    {
+      "name": "counter"
+    },
+    {
+      "name": "kitchen"
+    },
+    {
+      "name": "room"
+    },
+    {
+      "name": "playroom"
+    },
+    {
+      "name": "drjohnson"
+    },
+    {
+      "name": "train"
+    },
+    {
+      "name": "truck"
+    }
+  ]
+}

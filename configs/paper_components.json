@@ -1,0 +1,59 @@
+{
+  "pipeline": "paretogs_experiment",
+  "data_root": "../data",
+  "build_root": "output/paretogs",
+  "gpu_id": 0,
+  "repeat": 1,
+  "scenes": [
+    {
+      "name": "bicycle"
+    },
+    {
+      "name": "flowers"
+    },
+    {
+      "name": "garden"
+    },
+    {
+      "name": "stump"
+    },
+    {
+      "name": "treehill"
+    },
+    {
+      "name": "bonsai"
+    },
+    {
+      "name": "counter"
+    },
+    {
+      "name": "kitchen"
+    },
+    {
+      "name": "room"
+    },
+    {
+      "name": "playroom"
+    },
+    {
+      "name": "drjohnson"
+    },
+    {
+      "name": "train"
+    },
+    {
+      "name": "truck"
+    }
+  ],
+  "output_root": "output/paper/components",
+  "experiment": {
+    "kind": "components",
+    "variants": [
+      "full",
+      "fixed_shared_state",
+      "no_opacity_gate",
+      "linear_progress",
+      "full_parameters"
+    ]
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "pipeline": "paretogs_experiment",
+  "data_root": "../data",
+  "build_root": "output/paretogs",
+  "gpu_id": 0,
+  "repeat": 1,
+  "scenes": [
+    {
+      "name": "bicycle"
+    },
+    {
+      "name": "garden"
+    },
+    {
+      "name": "stump"
+    }
+  ],
+  "resource_limits": {
+    "cpu_max_percent": 45,
+    "memory_max_percent": 45,
+    "memory_mode": "guard"
+  },
+  "output_root": "output/paper/independent_gns",
+  "experiment": {
+    "kind": "independent_gns",
+    "training": {
+      "start_iteration": 14999,
+      "end_iteration": 25000,
+      "prune_from_iteration": 15000,
+      "prune_until_iteration": 18000,
+      "position_lr_max_steps": 30000,
+      "train_args": {
+        "data_device": "cuda",
+        "eval": true,
+        "resolution": -1,
+        "save_iterations": [
+          0
+        ],
+        "report_lpips_test": false,
+        "report_lpips_train": false,
+        "record_gns_prune_trace": true,
+        "empty_cache_interval": 0,
+        "use_las": true,
+        "use_rap": true,
+        "use_eas": true,
+        "use_mu": true
+      }
+    }
+  }
+}

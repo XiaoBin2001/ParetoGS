@@ -1,0 +1,79 @@
+{
+  "memory_mode": {
+    "description": "resource_limits.memory_mode: RSS guard or delegated cgroup hard limit",
+    "enum": [
+      "guard",
+      "strict"
+    ]
+  },
+  "training_method": {
+    "description": "Open-source training method entry",
+    "enum": [
+      "3dgs",
+      "absgs",
+      "improvedgs",
+      "gns"
+    ]
+  },
+  "abs_grad_reduce": {
+    "description": "ABS gradient reduction mode",
+    "enum": [
+      "mean",
+      "max"
+    ]
+  },
+  "optimizer_type": {
+    "description": "Dense optimizer branch",
+    "enum": [
+      "default",
+      "ours_adam"
+    ]
+  },
+  "init_type": {
+    "description": "Point-cloud initialization branch",
+    "enum": [
+      "sfm",
+      "random"
+    ]
+  },
+  "final_budget_mode": {
+    "description": "GNS final budget mode",
+    "enum": [
+      "off",
+      "num",
+      "rate"
+    ]
+  },
+  "pipeline": {
+    "description": "Batch workflow",
+    "enum": [
+      "training",
+      "paretogs_full",
+      "paretogs_experiment"
+    ]
+  },
+  "experiment.kind": {
+    "description": "Shared paper evaluation workflow",
+    "enum": [
+      "components",
+      "encoding",
+      "anchor_density",
+      "switch_timing",
+      "budget_curve",
+      "independent_gns"
+    ]
+  },
+  "experiment.variants": {
+    "description": "Component or encoding variants selected by experiment.kind",
+    "enum": [
+      "full",
+      "fixed_shared_state",
+      "no_opacity_gate",
+      "linear_progress",
+      "full_parameters",
+      "fp32",
+      "fp16",
+      "atlas"
+    ]
+  }
+}

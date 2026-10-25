@@ -1,0 +1,67 @@
+{
+  "pipeline": "paretogs_experiment",
+  "data_root": "../data",
+  "build_root": "output/paretogs",
+  "gpu_id": 0,
+  "repeat": 1,
+  "scenes": [
+    {
+      "name": "garden"
+    }
+  ],
+  "output_root": "output/paper/anchor_density",
+  "experiment": {
+    "kind": "anchor_density",
+    "anchor_sets": {
+      "five": [
+        0.004,
+        0.008,
+        0.016,
+        0.032,
+        0.064
+      ],
+      "three": [
+        0.004,
+        0.016,
+        0.064
+      ],
+      "two": [
+        0.004,
+        0.064
+      ]
+    },
+    "samples": 50,
+    "calibration": {
+      "common_powers": [
+        0.25,
+        0.5,
+        0.75,
+        1,
+        1.5,
+        2,
+        3,
+        4,
+        6
+      ],
+      "shell_gate_powers": [
+        0.25,
+        0.5,
+        0.75,
+        1,
+        1.25,
+        1.5,
+        2,
+        3
+      ],
+      "progresses": [
+        0.25,
+        0.5,
+        0.75
+      ],
+      "view_count": 10,
+      "lambda_dssim": 0.2,
+      "monotonic_weight": 1.0,
+      "smoothness_weight": 0.25
+    }
+  }
+}

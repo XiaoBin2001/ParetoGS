@@ -1,0 +1,28 @@
+{
+  "pipeline": "paretogs_experiment",
+  "data_root": "../data",
+  "build_root": "output/paretogs",
+  "gpu_id": 0,
+  "repeat": 1,
+  "scenes": [
+    {
+      "name": "bicycle"
+    },
+    {
+      "name": "garden"
+    },
+    {
+      "name": "stump"
+    }
+  ],
+  "resource_limits": {
+    "cpu_max_percent": 45,
+    "memory_max_percent": 45,
+    "memory_mode": "guard"
+  },
+  "output_root": "output/paper/budget_curve",
+  "experiment": {
+    "kind": "budget_curve",
+    "subdivisions": 10
+  }
+}
