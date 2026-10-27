@@ -12,7 +12,7 @@
 Xiaobin Deng · Changyu Diao<sup>*</sup> · Min Li · Duanqing Xu<sup>*</sup><br>
 浙江大学 · <sup>*</sup>通讯作者
 
-[项目页](https://xiaobin2001.github.io/ParetoGS-Web/zh.html) · [论文 PDF](https://xiaobin2001.github.io/ParetoGS-Web/assets/paper.pdf) · arXiv：待更新
+[项目页](https://xiaobin2001.github.io/ParetoGS-Web/zh.html) · [论文 PDF](https://xiaobin2001.github.io/ParetoGS-Web/assets/paper.pdf) · [arXiv](https://arxiv.org/abs/2610.34235)
 
 ParetoGS 希望让一个 3D Gaussian Splatting（3DGS）场景模型适应不同的高斯数量预算。模型构建完成后，就可以根据设备或应用的需要选择预算，解码出对应的高斯参数。
 
@@ -157,7 +157,19 @@ ParetoGS 从 [ImprovedGS 开源代码库](https://github.com/XiaoBin2001/Improve
 
 ## 5. 引用与许可
 
-BibTeX：待更新。
+如果本工作对你的研究有帮助，欢迎引用：
+
+```bibtex
+@misc{deng2026paretogshighqualitycontinuousbudget3d,
+      title={ParetoGS: High-Quality Continuous-Budget 3D Gaussian Splatting with Sparse Adapted Anchors},
+      author={Xiaobin Deng and Changyu Diao and Min Li and Duanqing Xu},
+      year={2026},
+      eprint={2610.34235},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2610.34235},
+}
+```
 
 上游论文及引用信息见 [ImprovedGS](https://github.com/XiaoBin2001/Improved-GS)。
 

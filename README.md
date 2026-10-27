@@ -12,7 +12,7 @@
 Xiaobin Deng · Changyu Diao<sup>*</sup> · Min Li · Duanqing Xu<sup>*</sup><br>
 Zhejiang University · <sup>*</sup>Corresponding authors
 
-[Project page](https://xiaobin2001.github.io/ParetoGS-Web/) · [Paper (PDF)](https://xiaobin2001.github.io/ParetoGS-Web/assets/paper.pdf) · arXiv: coming soon
+[Project page](https://xiaobin2001.github.io/ParetoGS-Web/) · [Paper (PDF)](https://xiaobin2001.github.io/ParetoGS-Web/assets/paper.pdf) · [arXiv](https://arxiv.org/abs/2610.34235)
 
 ParetoGS builds one 3D Gaussian Splatting (3DGS) scene model that can be decoded at different Gaussian budgets. Once it is ready, you can choose a budget to suit the device or application and obtain the corresponding Gaussian parameters.
 
@@ -157,7 +157,19 @@ We thank the ImprovedGS authors and the contributors to 3D Gaussian Splatting, A
 
 ## 5. Citation and license
 
-BibTeX: coming soon.
+If this work helps your research, please cite:
+
+```bibtex
+@misc{deng2026paretogshighqualitycontinuousbudget3d,
+      title={ParetoGS: High-Quality Continuous-Budget 3D Gaussian Splatting with Sparse Adapted Anchors},
+      author={Xiaobin Deng and Changyu Diao and Min Li and Duanqing Xu},
+      year={2026},
+      eprint={2610.34235},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2610.34235},
+}
+```
 
 See [ImprovedGS](https://github.com/XiaoBin2001/Improved-GS) for the upstream paper and citation.
 
